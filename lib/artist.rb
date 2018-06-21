@@ -16,6 +16,10 @@ class Artist
         @@all << self
     end
 
+    def all
+        @@all?
+    end
+    
     def find_or_create_by_name(name)
         if @@all.include?(name)
             @@all.detect{|artist| artist == name}
@@ -27,6 +31,6 @@ class Artist
         @songs.each do |song|
             puts song
         end
-    end 
+    end
 
 end
