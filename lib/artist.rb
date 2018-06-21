@@ -18,7 +18,15 @@ class Artist
 
     def find_or_create_by_name(name)
         if @@all.include?(name)
-            @@all
+            @@all.detect{|artist| artist == name}
+        else artist = Artist.new(name)
+        end
+    end
 
+    def print_songs
+        @songs.each do |song|
+            puts song
+        end
+    end 
 
 end
