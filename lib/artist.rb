@@ -12,6 +12,13 @@ class Artist
         @songs
     end
 
+    def save
+        @@all << self
+    end
+
+    def find_or_create_by_name(name)
+        if @@all.include?(name)
+            @@all
 
 
 end
