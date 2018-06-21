@@ -31,5 +31,4 @@ class Artist
             puts song
         end
     end
-binding.pry
 end
