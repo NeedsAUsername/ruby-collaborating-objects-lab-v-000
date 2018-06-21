@@ -1,3 +1,5 @@
+require 'pry'
+
 class Artist
     attr_accessor :name, :songs
 
@@ -19,7 +21,7 @@ class Artist
     def all
         @@all?
     end
-    
+
     def find_or_create_by_name(name)
         if @@all.include?(name)
             @@all.detect{|artist| artist == name}
@@ -32,5 +34,5 @@ class Artist
             puts song
         end
     end
-
+binding.pry
 end
