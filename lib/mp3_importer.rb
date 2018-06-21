@@ -1,5 +1,5 @@
 class MP3Importer
-    
+
     attr_accessor :path
 
     def initialization(path)
@@ -14,5 +14,4 @@ class MP3Importer
 
     def import
     end
-
-end
+end 
