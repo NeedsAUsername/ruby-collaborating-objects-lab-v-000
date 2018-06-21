@@ -6,6 +6,7 @@ class Song
     end
 
     def self.new_by_filename(file)
+        
     end
 
 end
